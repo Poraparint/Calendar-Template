@@ -253,11 +253,11 @@ function updateEvents(date) {
               <i class="fa fa-circle"></i>
               <h3 class="event-title">${event.title}</h3>
             </div>
+            <div class="event-time">
+              <span class="span-time">${event.time}</span>
+            </div>
             <div class="title">
               <h3 class="event-des">- ${event.des}</h3>
-            </div>
-            <div class="event-time">
-              <span class="event-time">${event.time}</span>
             </div>
         </div>`;
       });
