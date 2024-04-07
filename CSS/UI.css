@@ -345,9 +345,14 @@ body {
     position: relative;
     width: 95%;
     min-height: 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+            "name time"
+            "des time";
     justify-content: center;
-    flex-direction: column;
     gap: 5px;
     padding: 0 20px;
     padding-left: 50px;
@@ -373,15 +378,17 @@ body {
 
 .events .event .title .event-title {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 20px;
-    
+    grid-area: name;
+    color: #e6e6e6;
 }
 
 .events .event .title .event-des {
     font-size: 1rem;
     font-weight: 400;
     margin-left: 30px;
+    grid-area: des;
 }
 
 .events .event i {
@@ -392,6 +399,8 @@ body {
 .events .event:hover i {
     color: #fff;
 }
+
+
 
 .events .event .event-time {
     font-size: 1.2rem;
