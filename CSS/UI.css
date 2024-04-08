@@ -647,6 +647,10 @@ body {
         height: 75px;
     }
 
+    .calendar .month .date{
+        font-size: 30px;
+    }
+
     .calendar .weekdays {
         height: 50px;
     }
@@ -665,4 +669,7 @@ body {
         padding: 20px;
     }
 }
+
+
+
 
