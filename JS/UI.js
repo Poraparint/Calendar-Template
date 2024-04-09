@@ -351,29 +351,6 @@ addEventSubmit.addEventListener("click", () => {
 
   const timeFrom = convertTime(eventTimeFrom);
   
-
-  //check if event is already added
-  let eventExist = false;
-  eventsArr.forEach((event) => {
-    if (
-      event.day === activeDay &&
-      event.month === month + 1 &&
-      event.year === year
-    ) {
-      event.events.forEach((event) => {
-        if (event.title === eventTitle) {
-          eventExist = true;
-        }
-        if (event.des === eventDes) {
-          eventExist = true;
-        }
-      });
-    }
-  });
-  if (eventExist) {
-    alert("Event already added");
-    return;
-  }
   const newEvent = {
     title: eventTitle,
     des: eventDes,
